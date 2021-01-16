@@ -11,7 +11,9 @@ export class AppComponent {
   finalnumber : number
 
   onget(event)
-  {this.storedtext = event.target.value
+
+  {this.storedtext = event.target.value}
+  some(){
     if (this.storedtext%2===0){
       this.finalnumber=(this.storedtext*this.storedtext)-1
     }
@@ -19,5 +21,7 @@ export class AppComponent {
       this.finalnumber=(this.storedtext*this.storedtext)+1
     }
 
- }
+  }
+
+
 }
